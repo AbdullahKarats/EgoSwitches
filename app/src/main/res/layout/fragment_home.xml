@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_bright"
+    tools:context=".Home">
+
+
+    <Switch
+        android:id="@+id/egoSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="75dp"
+        android:text="Ego"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/givingSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="22dp"
+        android:layout_marginBottom="16dp"
+        android:text="Giving"
+        app:layout_constraintBottom_toTopOf="@+id/kindnessSwitch"
+        app:layout_constraintStart_toStartOf="@+id/kindnessSwitch"
+        tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+    <Switch
+        android:id="@+id/happinessSwtich"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="38dp"
+        android:layout_marginTop="23dp"
+        android:text="Happiness"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/respectSwitch" />
+
+    <Switch
+        android:id="@+id/kindnessSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="206dp"
+        android:text="Kindness"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Switch
+        android:id="@+id/optimismSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="Optimism"
+        app:layout_constraintStart_toStartOf="@+id/kindnessSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/kindnessSwitch" />
+
+    <Switch
+        android:id="@+id/respectSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="3dp"
+        android:text="Respect"
+        app:layout_constraintEnd_toEndOf="@+id/optimismSwitch"
+        app:layout_constraintTop_toBottomOf="@+id/optimismSwitch" />
+</androidx.constraintlayout.widget.ConstraintLayout>
